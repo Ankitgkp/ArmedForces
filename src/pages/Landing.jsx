@@ -58,6 +58,11 @@ function HeroText() {
 
   return (
     <div className="font-univers text-center absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 w-full">
+
+      <div className="absolute -top-32 left-1/2 transform -translate-x-1/2">
+        <img src="https://media-hosting.imagekit.io/efbb2e8e1f194392/0849a60e-c149-41b5-8707-954a6e04c91c_removalai_preview.png?Expires=1838311828&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=o~s8FuBif-1X3oB4TxfRnQIV4aSwDEIq7Js~FVvk74qvVBKW8uivZJi~S1JAHmUnExPa0V85Cqw3iDhUHPt46nL5z9JWpmWvLzZbQBVzq8guHnXNX1RcLidRfdJ0yhfKPShNxBblMxLGlkP5Vzownv~vdgbpS5fbLPOTEGWx--6ZQgziAxcifqlRrQgvt5G3CmWP2~2sjxJyQM8l5TyooLNVZIPu0PCi54ynS1kQq1aohmOHHF1w3FljWg-A4TUSHGL2IJdl1vB7ZDqiebra7ad0rilq0nBu2HkwoeSvSEbhJvYwovGQFcHmRr91zSw7Tp2jFvqn6cTqnqPoKNEOSg__" alt="Logo" className="h-50 w-50 object-contain" />
+      </div>
+      
       <p className="text-xl text-white sm:text-2xl md:text-3xl lg:text-8xl font-semibold">
         <span className="font-light text-[#D7D2CB]">THE ARMY <br /></span>
         <span className="font-light">THE NATION NEEDS</span>
