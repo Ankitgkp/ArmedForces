@@ -15,16 +15,16 @@ function JoinButton() {
   }, []);
 
   return (
-    <div className="min-h-screen px-20 mt-25">
+    <div className="h-170 px-20 mt-25">
       <div className="mt-10 h-[400px] w-full mx-auto">
         <img
           className="h-full w-full object-cover"
-          src="src/assets/Army_soldie_1.jpeg"
+          src="https://media-hosting.imagekit.io/eef92ecd8f034248/Army_soldie_1.jpeg?Expires=1838304492&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=KC1Z0AXsF0bGM50Jk9M63-op3xfTBu85DPWsBo~RwQ6WKCUe249a4b0-9IyXrD8Le8qICBLdT52x~gCz8D0BB7KRm1JVqmm9cSyKw2hki-BDaRVyq7QJ13Ek~cO-RcFAPAPR0MYPAUFb0dnZlLZ6ERqRkPYxzpRW~4iOktCR5mCG9-VFExD3ceXzaq2jdH9nsWCOpRhZ5DXXDN~efhkyXw-lrT80fquIxBqmsBQ3HfvnB2y7XVm-Zk3RuT47LtLzgGUIvrHgKICgrJCrwqqnSUFXQiukrMVk3Y6i76sQSRfdp~KMohyIrzXAjTOyrjCBabMbqK1itNpVQLmuH6ISMQ__"
           alt="Defense Image"
         />
       </div>
 
-      <div className="relative -top-25 flex justify-center gap-8 mt-10">
+      <div className="relative -top-25 flex justify-center gap-8 mt-8">
         {[
           {
             title: "JOIN INDIAN ARMY",

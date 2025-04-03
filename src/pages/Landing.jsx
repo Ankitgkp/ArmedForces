@@ -6,6 +6,7 @@ import Achievements from '../components/Achievements';
 import PhotoFrames from '../components/PhotoFrame';
 import JoinButton from '../components/JoinButton';
 import Footer from '../components/Footer';
+import ArmyRegimentsMarquee from '../components/ArmyRegimentsMarquee';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -20,7 +21,8 @@ const Landing = () => {
       <Achievements />
       <PhotoFrames />
       <JoinButton />
-      <Footer></Footer>
+      <ArmyRegimentsMarquee />
+      <Footer />
     </div>
   );
 };
@@ -38,7 +40,7 @@ function BackgroundImage() {
 
   return (
     <div className="absolute inset-0 flex justify-end brightness-30">
-      <img className="w-auto h-auto" src="src/assets/Map.png" alt="Map.png" />
+      <img className="w-auto h-auto" src="https://media-hosting.imagekit.io/679b6e7679ac46f9/Map.png?Expires=1838304411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UT6JmMpGfKKxxxR8SjFchuuV2aID9iLIpWoCttnl82ydTF~zBZqFsvFMz4NkkuVkwCAFfc7b0kniDiGyIuJGMOtEFHrzF2YElRSsE~d59xMPdx-ejwxr8SAjrqA6vsYl2BDfQm5Tfmy42jE8sMANYlql7snjts1e~xM3PuU1lJlyjfxbo67YZT-RxZdEUGKWyUQFEUowAVmlRgxv33dSpaGJLl0Uslc1LRBJhbmmt1xZ1~8PqYHO~MllW1WWI~lzUhH9a-Z7ClNBWUKapxy3Gx-LNWTBwtyHkOYXA8BVVw5kf3ez0tbeFRbJHna41dw7pu3vJx~C0PUSxd4coEJZ3g__" alt="Map.png" />
     </div>
   );
 }
@@ -79,12 +81,11 @@ function Section2() {
       <div className="mt-10 h-[400px] w-full mx-auto">
         <img
           className="h-full w-full object-cover"
-          src="src/assets/pexels-ashutosh-anand-2147962899-29850345.jpg"
+          src="https://media-hosting.imagekit.io/82c81d174b514c26/pexels-ashutosh-anand-2147962899-29850345.jpg?Expires=1838304326&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nnc0~W0c0t4oaTN0PRFRxMRLauUllIhG46UpBQqb7Xi9hf5IyKaVXj2GoP31DWLSZbexJz~Zm2w~CE2TIT~Fefik9X2DYwAuJoFtRj1fWNY9g5x~fdTmV4Xj3yAFjIX1IvxUsv3tCgPjpyazlIiyF2SDxwPjZnbDPSvPd9Mfek2g77Kbad36EZ6FQV5ZPg3cY1JOvkZmNpHXw6YsO8dbLwMSe-xK-GNDakOWCpoA3WamNM~UzlKJpUBbeerDQxeOzWDbgnD-ptu6PLCNOQ8y-Q6-9Fs-foZcREbAXjl-7u~jcwvZkeBaqysQqC1LRTiWZIO2RwK36GRDIme5ulE~XA__"
           alt="Defense Image"
         />
       </div>
 
-      {/* Cards Section */}
       <div className="relative -top-25 flex justify-between gap-8 mt-10">
         {[
           {
@@ -122,7 +123,7 @@ function VideoSection() {
 
       <div className="relative w-[100%] max-w-4xl rounded-lg overflow-hidden shadow-lg">
         <video autoPlay controls muted controlsList="nodownload" className="w-full h-auto rounded-lg">
-          <source src="src/assets/Hero_Animation_With_Audio.mp4" type="video/mp4" />
+          <source src="https://media-hosting.imagekit.io/2e0cde2b09a9491d/Hero_Animation_With_Audio.mp4?Expires=1838305376&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=S8GTyoszJC66Za864fcSKJfkDuqRIYzim2YRUZOZ2WooriMzEboZKQyaQOrID0luMEM54WumHQ4zhqssDUXl5zStqaXLe~0VevL8MF47wzqHfsm1UoigUFyfXmqt6mOSoESTJ0svjkF8NIgB6q5dhsSsXMc6gtPFzwhiipyidoHFqlgSOUk6Uh8LV8CRsuj8cw-81FSXDfnx5GcTJa6bCyn3ocdBiUWTUWxJTQndB2Zk~BKcxDyi2vtjYWScGyIXAhRh~1QF5OZixERYfee6axRm5FMwxmJmKf0U6opU2eV2K7Qfg1f78xg2h7ef4HzcpLWQBfBrqTDRnetxVvwmLQ__" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
