@@ -38,9 +38,9 @@ function Section1() {
 
 function BackgroundImage() {
   return (
-    <div className="absolute inset-0 flex justify-center items-center">
+    <div className="absolute inset-0 flex justify-center md:justify-end items-center">
       <img
-        className="h-auto w-[95%] sm:w-[85%] md:w-[75%] lg:w-[60%] xl:w-[50%] max-w-none object-contain brightness-30"
+        className="h-auto w-[95%] sm:w-[85%] md:w-[65%] lg:w-[50%] xl:w-[45%] max-w-none object-contain brightness-30"
         src="https://media-hosting.imagekit.io/679b6e7679ac46f9/Map.png?Expires=1838304411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UT6JmMpGfKKxxxR8SjFchuuV2aID9iLIpWoCttnl82ydTF~zBZqFsvFMz4NkkuVkwCAFfc7b0kniDiGyIuJGMOtEFHrzF2YElRSsE~d59xMPdx-ejwxr8SAjrqA6vsYl2BDfQm5Tfmy42jE8sMANYlql7snjts1e~xM3PuU1lJlyjfxbo67YZT-RxZdEUGKWyUQFEUowAVmlRgxv33dSpaGJLl0Uslc1LRBJhbmmt1xZ1~8PqYHO~MllW1WWI~lzUhH9a-Z7ClNBWUKapxy3Gx-LNWTBwtyHkOYXA8BVVw5kf3ez0tbeFRbJHna41dw7pu3vJx~C0PUSxd4coEJZ3g__"
         alt="Map"
       />
