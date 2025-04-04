@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from '../components/Navbar';
@@ -35,32 +35,20 @@ function Section1() {
   );
 }
 
+
 function BackgroundImage() {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsVisible(window.innerWidth >= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize(); 
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <div className="absolute inset-0 flex justify-end">
-      {isVisible && (
-        <img
-          className="h-full w-auto max-w-[50%] object-cover brightness-30"
-          src="https://media-hosting.imagekit.io/679b6e7679ac46f9/Map.png?Expires=1838304411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UT6JmMpGfKKxxxR8SjFchuuV2aID9iLIpWoCttnl82ydTF~zBZqFsvFMz4NkkuVkwCAFfc7b0kniDiGyIuJGMOtEFHrzF2YElRSsE~d59xMPdx-ejwxr8SAjrqA6vsYl2BDfQm5Tfmy42jE8sMANYlql7snjts1e~xM3PuU1lJlyjfxbo67YZT-RxZdEUGKWyUQFEUowAVmlRgxv33dSpaGJLl0Uslc1LRBJhbmmt1xZ1~8PqYHO~MllW1WWI~lzUhH9a-Z7ClNBWUKapxy3Gx-LNWTBwtyHkOYXA8BVVw5kf3ez0tbeFRbJHna41dw7pu3vJx~C0PUSxd4coEJZ3g__"
-          alt="Map"
-        />
-      )}
+    <div className="absolute inset-0 flex justify-center items-center">
+      <img
+        className="h-auto w-[95%] sm:w-[85%] md:w-[75%] lg:w-[60%] xl:w-[50%] max-w-none object-contain brightness-30"
+        src="https://media-hosting.imagekit.io/679b6e7679ac46f9/Map.png?Expires=1838304411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UT6JmMpGfKKxxxR8SjFchuuV2aID9iLIpWoCttnl82ydTF~zBZqFsvFMz4NkkuVkwCAFfc7b0kniDiGyIuJGMOtEFHrzF2YElRSsE~d59xMPdx-ejwxr8SAjrqA6vsYl2BDfQm5Tfmy42jE8sMANYlql7snjts1e~xM3PuU1lJlyjfxbo67YZT-RxZdEUGKWyUQFEUowAVmlRgxv33dSpaGJLl0Uslc1LRBJhbmmt1xZ1~8PqYHO~MllW1WWI~lzUhH9a-Z7ClNBWUKapxy3Gx-LNWTBwtyHkOYXA8BVVw5kf3ez0tbeFRbJHna41dw7pu3vJx~C0PUSxd4coEJZ3g__"
+        alt="Map"
+      />
     </div>
   );
 }
+
+
 
 
 function HeroText() {
