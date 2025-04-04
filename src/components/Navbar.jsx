@@ -1,26 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className='mt-4 p-4'>
+    <nav className="mt-4 p-4 text-white">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
-        <div className="flex space-x-15">
-          <a href="/" className="text-white font-normal">Home</a>
-          <a href="/army" className="text-white font-normal">Army</a>
-          <a href="/navy" className="text-white font-normal">Navy</a>
-          <a href="/airforce" className="text-white font-normal">Airforce</a>
+        {/* Hamburger Menu Button (Mobile) */}
+        <button 
+          className="md:hidden text-xl" 
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          ☰
+        </button>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-8">
+          <a href="/army" className="font-normal">Army</a>
+          <a href="/navy" className="font-normal">Navy</a>
+          <a href="/airforce" className="font-normal">Airforce</a>
         </div>
+
+        {/* Join Button (Always on Right) */}
         <a 
           href="https://joinindianarmy.nic.in/" 
           target="_blank" 
-          rel="noopener noreferrer" 
-          className="block"
+          rel="noopener noreferrer"
+          className="border border-[#D7D2CB] px-4 py-2 text-sm font-bold text-center"
         >
-          <div className="text-white h-auto w-50 p-3 border border-[#D7D2CB] text-sm font-bold text-center cursor-pointer">
-            LOOKING TO JOIN?
-          </div>
+          LOOKING TO JOIN?
         </a>
       </div>
+
+      {/* Mobile Menu (Left-aligned) */}
+      {isOpen && (
+        <div className="md:hidden mt-4 flex flex-col items-start space-y-3">
+          <a href="/army" className="font-normal">Army</a>
+          <a href="/navy" className="font-normal">Navy</a>
+          <a href="/airforce" className="font-normal">Airforce</a>
+        </div>
+      )}
     </nav>
   );
 };

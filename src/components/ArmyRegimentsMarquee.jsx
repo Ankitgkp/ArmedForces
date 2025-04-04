@@ -12,22 +12,23 @@ const regiments = [
   { name: "Naga Regiment", image: "https://media-hosting.imagekit.io/61c2d0b425d7451f/Naga_Regiment_Insignia_(India).svg.png?Expires=1838308082&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mHez56iFIPKdZyiN2NR-PNics2W2i5Vg6hL-8b5f1g5nVoqUS7Fn5vQ8zEZejjkXOQJ1DTSxkufvpIL087nWlcbqGdOHeFSIpjJTypt6TzpL-1HRQTgye2g0061vxto3a48JdXeHUgD0826cmaoGJH6TFv4hcDFD43WxDaydHltYho~F29MvorCm1rSxkvuHViwtF96cx-nWwozRVewfD~4QjqcczPNUn1EEuWUcOmZ8w-LK7W8~4RDk8sOLBbIyosoX~UswiyQWCBhzYjOP74kXi6t3bTvdpjqXTcVmeY~JIVLp3EpiZh5j4j0p3Nsl1ypbSTcEumMKkLkMAVSeag__", link: "https://www.indianarmy.nic.in" },
 ];
 
+
 function ArmyRegimentsMarquee() {
   return (
-    <div className="overflow-hidden w-full bg-[#2B2E31] mb-25 py-6">
+    <div className="overflow-hidden w-full bg-[#2B2E31] mb-6 py-4">
       <motion.div
-        className="flex gap-10 w-max"
+        className="flex flex-wrap gap-6 md:gap-10 w-max justify-center"
         animate={{ x: ["0%", "-50%"] }}
         transition={{ repeat: Infinity, duration: 50, ease: "linear" }}
       >
         {[...regiments, ...regiments].map((regiment, index) => (
-          <div key={index} className="flex flex-col items-center text-center px-6">
+          <div key={index} className="flex flex-col items-center text-center px-4">
             <img
               src={regiment.image}
               alt={regiment.name}
-              className="h-18 w-18 object-contain grayscale opacity-80 hover:opacity-100 transition duration-300"
+              className="h-12 md:h-16 lg:h-18 w-auto max-w-[80px] md:max-w-[100px] object-contain grayscale opacity-80 hover:opacity-100 transition duration-300"
             />
-            <span className="text-[#D7D2CB] text-xs mt-2">{regiment.name}</span>
+            <span className="text-[#D7D2CB] text-xs md:text-sm mt-2">{regiment.name}</span>
           </div>
         ))}
       </motion.div>

@@ -111,16 +111,9 @@ const PhotoFrames = () => {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
         {legends.map((legend, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center"
-          >
+          <div key={index} className="flex flex-col items-center">
             <div className="w-48 h-64 bg-[#3A3F44] overflow-hidden shadow-lg rounded-lg p-2">
-              <img
-                src={legend.img}
-                alt={legend.name}
-                className="w-full h-full object-cover rounded-md"
-              />
+              <img src={legend.img} alt={legend.name} className="w-full h-full object-cover rounded-md" />
             </div>
 
             <div className="mt-5 bg-[#3a3f4476] p-3 rounded-lg text-center w-48 shadow-md">
