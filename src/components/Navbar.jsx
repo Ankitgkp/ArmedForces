@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,10 @@ const Navbar = () => {
         </button>
 
         <div className="hidden md:flex space-x-8">
-          <a href="/army" className="font-normal">Army</a>
-          <a href="/navy" className="font-normal">Navy</a>
-          <a href="/airforce" className="font-normal">Airforce</a>
-          <a href="/shop" className="font-normal">Shop</a>
+          <Link to="/army" className="font-normal">Army</Link>
+          <Link to="/navy" className="font-normal">Navy</Link>
+          <Link to="/airforce" className="font-normal">Airforce</Link>
+          <Link to="/shop" className="font-normal">Shop</Link>
         </div>
 
         <a 
@@ -33,9 +34,9 @@ const Navbar = () => {
       {/* Mobile Menu (Left-aligned) */}
       {isOpen && (
         <div className="md:hidden mt-4 flex flex-col items-start space-y-3">
-          <a href="/army" className="font-normal">Army</a>
-          <a href="/navy" className="font-normal">Navy</a>
-          <a href="/airforce" className="font-normal">Airforce</a>
+          <Link to="/army" className="font-normal">Army</Link>
+          <Link to="/navy" className="font-normal">Navy</Link>
+          <Link to="/airforce" className="font-normal">Airforce</Link>
         </div>
       )}
     </nav>
