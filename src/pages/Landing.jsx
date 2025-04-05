@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Landing = () => {
   return (
-    <div className="bg-[#2B2E31]">
+    <div>
       <Navbar />
       <Section1 />
       <Section2 />
@@ -79,24 +79,29 @@ function HeroText() {
   );
 }
 
+
 function Section2() {
   return (
-    <div className="min-h-screen px-4 sm:px-10 md:px-20">
+    <div className="min-h-screen px-20">
       <div className="flex items-center h-15">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl text-[#D7D2CB] tracking-wider font-bold">
+        <h3 className="text-4xl text-[#D7D2CB] tracking-wider font-bold">
           <span className='text-[#9D2444]'>PILLARS</span> OF INDIA'S DEFENSE
         </h3>
       </div>
 
-      <div className="mt-6 sm:mt-10 h-60 sm:h-80 md:h-96 w-full mx-auto">
-        <img className="h-full w-full object-cover" src="https://media-hosting.imagekit.io/82c81d174b514c26/pexels-ashutosh-anand-2147962899-29850345.jpg?Expires=1838304326&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nnc0~W0c0t4oaTN0PRFRxMRLauUllIhG46UpBQqb7Xi9hf5IyKaVXj2GoP31DWLSZbexJz~Zm2w~CE2TIT~Fefik9X2DYwAuJoFtRj1fWNY9g5x~fdTmV4Xj3yAFjIX1IvxUsv3tCgPjpyazlIiyF2SDxwPjZnbDPSvPd9Mfek2g77Kbad36EZ6FQV5ZPg3cY1JOvkZmNpHXw6YsO8dbLwMSe-xK-GNDakOWCpoA3WamNM~UzlKJpUBbeerDQxeOzWDbgnD-ptu6PLCNOQ8y-Q6-9Fs-foZcREbAXjl-7u~jcwvZkeBaqysQqC1LRTiWZIO2RwK36GRDIme5ulE~XA__" alt="Defense" />
+      <div className="mt-10 h-[400px] w-full mx-auto">
+        <img
+          className="h-full w-full object-cover"
+          src="https://media-hosting.imagekit.io/82c81d174b514c26/pexels-ashutosh-anand-2147962899-29850345.jpg?Expires=1838304326&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nnc0~W0c0t4oaTN0PRFRxMRLauUllIhG46UpBQqb7Xi9hf5IyKaVXj2GoP31DWLSZbexJz~Zm2w~CE2TIT~Fefik9X2DYwAuJoFtRj1fWNY9g5x~fdTmV4Xj3yAFjIX1IvxUsv3tCgPjpyazlIiyF2SDxwPjZnbDPSvPd9Mfek2g77Kbad36EZ6FQV5ZPg3cY1JOvkZmNpHXw6YsO8dbLwMSe-xK-GNDakOWCpoA3WamNM~UzlKJpUBbeerDQxeOzWDbgnD-ptu6PLCNOQ8y-Q6-9Fs-foZcREbAXjl-7u~jcwvZkeBaqysQqC1LRTiWZIO2RwK36GRDIme5ulE~XA__"
+          alt="Defense Image"
+        />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div className="relative -top-25 flex justify-between gap-8 mt-10">
         {[
           {
             title: "Army",
-            fact: "The Indian Army is the world's second-largest with over 1.4 million active personnel.",
+            fact: "The Indian Army is the world's second-largest army with over 1.4 million active personnel.",
           },
           {
             title: "Navy",
@@ -107,9 +112,12 @@ function Section2() {
             fact: "The Indian Air Force has the world's fastest supersonic cruise missile, BrahMos.",
           }
         ].map((item, index) => (
-          <div key={index} className="p-6 bg-red/10 backdrop-blur-md rounded-lg flex flex-col text-center">
-            <h4 className="text-xl sm:text-2xl text-[#D7D2CB] mb-4">{item.title}</h4>
-            <p className="text-sm sm:text-lg text-[#B8B8B8]">{item.fact}</p>
+          <div
+            key={index}
+            className="w-1/3 h-[250px] p-6 bg-red/10 backdrop-blur-md rounded-lg flex flex-col justify-center items-center text-center"
+          >
+            <h4 className="text-2xl text-[#D7D2CB] mb-4 font-serif">{item.title}</h4>
+            <p className="text-lg text-[#B8B8B8]">{item.fact}</p>
           </div>
         ))}
       </div>
