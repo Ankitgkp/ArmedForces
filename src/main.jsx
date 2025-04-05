@@ -9,6 +9,7 @@ import AirforceHome from './pages/Airforce/AirforceHome.jsx'
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
+  { path: "/home", element: <App /> },
   { path: "/army", element: <ArmyHome /> },
   {path : "/navy", element: <NavyHome />},
   {path: "/airforce", element: <AirforceHome />},

@@ -15,6 +15,7 @@ const Navbar = () => {
         </button>
 
         <div className="hidden md:flex space-x-8">
+          <Link to="/home" className="font-normal">Home</Link>
           <Link to="/army" className="font-normal">Army</Link>
           <Link to="/navy" className="font-normal">Navy</Link>
           <Link to="/airforce" className="font-normal">Airforce</Link>
