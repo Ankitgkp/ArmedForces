@@ -8,6 +8,7 @@ import ArmyRegimentsMarquee from "../../components/ArmyRegimentsMarquee";
 import Gallery from "../../components/Gallery";
 import JoinButton from "../../components/JoinButton";
 import Footer from "../../components/Footer";
+import ArmyFAQ from "../../components/ArmyFAQ";
 
 const ArmyHome = () => {
   const [autoChange, setAutoChange] = useState(false);
@@ -63,6 +64,7 @@ const ArmyHome = () => {
     <WhyJoinArmy />
     <Gallery />
     <JoinButton />
+    <ArmyFAQ />
     <ArmyRegimentsMarquee />
     <Footer />
     </div>
