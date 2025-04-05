@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-body{
+body{   
     background-color: #2B2E31;
     font-family: "Univers Next Pro";
 }
+

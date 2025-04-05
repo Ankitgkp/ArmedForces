@@ -6,7 +6,6 @@ const Navbar = () => {
   return (
     <nav className="mt-4 p-4 text-white">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
-        {/* Hamburger Menu Button (Mobile) */}
         <button 
           className="md:hidden text-xl" 
           onClick={() => setIsOpen(!isOpen)}
@@ -14,14 +13,13 @@ const Navbar = () => {
           ☰
         </button>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           <a href="/army" className="font-normal">Army</a>
           <a href="/navy" className="font-normal">Navy</a>
           <a href="/airforce" className="font-normal">Airforce</a>
+          <a href="/shop" className="font-normal">Shop</a>
         </div>
 
-        {/* Join Button (Always on Right) */}
         <a 
           href="https://joinindianarmy.nic.in/" 
           target="_blank" 

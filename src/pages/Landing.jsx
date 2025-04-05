@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Landing = () => {
   return (
-    <div>
+    <div className="bg-[#2B2E31]">
       <Navbar />
       <Section1 />
       <Section2 />
