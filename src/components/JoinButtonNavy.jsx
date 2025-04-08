@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 /* eslint-disable no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion";
 
-function JoinButton() {
+function JoinButtonNavy() {
   const [hovered, setHovered] = useState(false);
   const [autoChange, setAutoChange] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setAutoChange((prev) => !prev);
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -19,7 +19,7 @@ function JoinButton() {
       <div className="mt-5 sm:mt-10 h-auto w-full mx-auto">
         <img
           className="h-auto w-full max-h-[400px] object-cover"
-          src="https://media-hosting.imagekit.io/eef92ecd8f034248/Army_soldie_1.jpeg?Expires=1838304492&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=KC1Z0AXsF0bGM50Jk9M63-op3xfTBu85DPWsBo~RwQ6WKCUe249a4b0-9IyXrD8Le8qICBLdT52x~gCz8D0BB7KRm1JVqmm9cSyKw2hki-BDaRVyq7QJ13Ek~cO-RcFAPAPR0MYPAUFb0dnZlLZ6ERqRkPYxzpRW~4iOktCR5mCG9-VFExD3ceXzaq2jdH9nsWCOpRhZ5DXXDN~efhkyXw-lrT80fquIxBqmsBQ3HfvnB2y7XVm-Zk3RuT47LtLzgGUIvrHgKICgrJCrwqqnSUFXQiukrMVk3Y6i76sQSRfdp~KMohyIrzXAjTOyrjCBabMbqK1itNpVQLmuH6ISMQ__"
+          src="https://images.pexels.com/photos/4130926/pexels-photo-4130926.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Defense Image"
         />
       </div>
@@ -27,11 +27,11 @@ function JoinButton() {
       <div className="relative -top-10 flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mt-6">
         {[
           {
-            title: "JOIN INDIAN ARMY",
+            title: "JOIN INDIAN NAVY",
             hoverTitle: "Click to Join",
             autoTitle: "Be a Hero, Enlist Now!",
             fact: "Serve with honor, fight with courage, and protect with pride. Be a part of the legacy that shapes the nation's future.",
-            link: "https://joinindianarmy.nic.in/",
+            link: "https://www.joinindiannavy.gov.in/",
           },
         ].map((item, index) => (
           <div
@@ -61,4 +61,4 @@ function JoinButton() {
   );
 }
 
-export default JoinButton;
+export default JoinButtonNavy;
