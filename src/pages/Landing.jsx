@@ -7,6 +7,7 @@ import PhotoFrames from '../components/PhotoFrame';
 import JoinButton from '../components/JoinButton';
 import Footer from '../components/Footer';
 import ArmyRegimentsMarquee from '../components/ArmyRegimentsMarquee';
+import AgeEligibilityCalculator from '../components/AgeEligibilityCalculator';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +17,7 @@ const Landing = () => {
       <Navbar />
       <Section1 />
       <Section2 />
+      <AgeEligibilityCalculator />
       <VideoSection />
       <Achievements />
       <PhotoFrames />
@@ -67,11 +69,11 @@ function HeroText() {
       <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-32 sm:w-48 md:w-56 lg:w-64">
         <img src="https://media-hosting.imagekit.io/efbb2e8e1f194392/0849a60e-c149-41b5-8707-954a6e04c91c_removalai_preview.png?Expires=1838311828&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=o~s8FuBif-1X3oB4TxfRnQIV4aSwDEIq7Js~FVvk74qvVBKW8uivZJi~S1JAHmUnExPa0V85Cqw3iDhUHPt46nL5z9JWpmWvLzZbQBVzq8guHnXNX1RcLidRfdJ0yhfKPShNxBblMxLGlkP5Vzownv~vdgbpS5fbLPOTEGWx--6ZQgziAxcifqlRrQgvt5G3CmWP2~2sjxJyQM8l5TyooLNVZIPu0PCi54ynS1kQq1aohmOHHF1w3FljWg-A4TUSHGL2IJdl1vB7ZDqiebra7ad0rilq0nBu2HkwoeSvSEbhJvYwovGQFcHmRr91zSw7Tp2jFvqn6cTqnqPoKNEOSg__" alt="Logo" className="w-full object-contain" />
       </div>
-      
+
       <p className="text-lg sm:text-xl md:text-3xl lg:text-6xl xl:text-8xl text-white font-semibold">
         <span className="font-light text-[#D7D2CB]">THE ARMY <br /></span>
         <span className="font-light">THE NATION NEEDS</span>
-      </p>  
+      </p>
       <p ref={textRef} className="text-sm sm:text-lg md:text-xl text-[#D7D2CB] opacity-0">
         Defending <span className="bg-gradient-to-r from-[#FF9933] via-white to-[#138808] text-transparent bg-clip-text">INDIA</span>'s integrity and securing its future.
       </p>
