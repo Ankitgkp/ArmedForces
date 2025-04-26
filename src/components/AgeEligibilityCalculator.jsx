@@ -1,8 +1,3 @@
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import dayjs from 'dayjs';
-
 import React, { useState } from 'react';
 import { Container, Box, Typography, TextField, Button, Stack, Chip, Fade, Zoom, Link } from '@mui/material';
 import { motion } from 'framer-motion';
@@ -11,24 +6,21 @@ import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 
 const AgeEligibilityCalculatorWrapper = () => {
     return (
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <AgeEligibilityCalculator />
-        </LocalizationProvider>
+        <AgeEligibilityCalculator />
     );
 };
 
-
 const AgeEligibilityCalculator = () => {
-    const [dob, setDob] = useState(null);
+    const [dob, setDob] = useState('');
     const [age, setAge] = useState(null);
     const [eligibility, setEligibility] = useState([]);
     const [showRoles, setShowRoles] = useState(false);
     const [submitted, setSubmitted] = useState(false);
 
-    const calculateAge = (dobObject) => {
-        if (!dobObject || !dobObject.isValid()) return null;
+    const calculateAge = (dobString) => {
+        if (!dobString) return null;
         try {
-            const birthDate = dobObject.toDate();
+            const birthDate = new Date(dobString);
             const today = new Date();
 
             let age = today.getFullYear() - birthDate.getFullYear();
@@ -81,7 +73,6 @@ const AgeEligibilityCalculator = () => {
         return roles.map(role => ({ name: role, link: links[role] || '#' }));
     };
 
-
     const handleDobSubmit = (e) => {
         e.preventDefault();
         const calculatedAge = calculateAge(dob);
@@ -126,11 +117,12 @@ const AgeEligibilityCalculator = () => {
                         Defence Job Eligibility
                     </Typography>
                     <form onSubmit={handleDobSubmit}>
-                        <DatePicker
+                        <TextField
                             label="Date of Birth"
+                            type="date"
                             value={dob}
-                            onChange={(newValue) => {
-                                setDob(newValue);
+                            onChange={(e) => {
+                                setDob(e.target.value);
                                 setShowRoles(false);
                                 setSubmitted(false);
                             }}
@@ -155,19 +147,12 @@ const AgeEligibilityCalculator = () => {
                                     '&.Mui-focused': {
                                         color: 'primary.main'
                                     }
-                                },
-                                '& .MuiSvgIcon-root': {
-                                    color: secondaryTextColor,
                                 }
                             }}
-                            slotProps={{
-                                textField: {
-                                    required: true,
-                                    fullWidth: true,
-                                    InputLabelProps: {
-                                        shrink: true
-                                    }
-                                }
+                            required
+                            fullWidth
+                            InputLabelProps={{
+                                shrink: true
                             }}
                         />
 
@@ -184,11 +169,6 @@ const AgeEligibilityCalculator = () => {
                                     borderRadius: 2,
                                     textTransform: 'none',
                                     fontSize: '1rem',
-                                    // boxShadow: '0 3px 8px rgba(0, 123, 255, 0.25)',
-                                    transition: 'background-color 0.2s, box-shadow 0.2s, transform 0.1s',
-                                    '&:hover': {
-                                        boxShadow: '0 4px 12px rgba(0, 123, 255, 0.35)',
-                                    },
                                 }}
                             >
                                 Check Eligibility
@@ -270,8 +250,13 @@ const AgeEligibilityCalculator = () => {
                             ) : (dob &&
                                 <Stack direction="row" alignItems="center" spacing={1} sx={{ p: 1.5, borderRadius: 2, backgroundColor: 'rgba(255, 167, 38, 0.1)', border: '1px solid rgba(255, 167, 38, 0.3)' }}>
                                     <ErrorOutlineIcon sx={{ color: 'warning.light' }} />
-                                    <Typography color="warning.light" align="center" fontWeight={500} fontSize="0.95rem">
-                                        Please select a valid Date of Birth.
+                                    <Typography
+                                        color="warning.light"
+                                        align="center"
+                                        fontWeight={500}
+                                        fontSize="0.95rem"
+                                    >
+                                        Invalid Date. Please enter a valid Date of Birth.
                                     </Typography>
                                 </Stack>
                             )}
@@ -283,4 +268,4 @@ const AgeEligibilityCalculator = () => {
     );
 };
 
-export default AgeEligibilityCalculator;
+export default AgeEligibilityCalculatorWrapper;
