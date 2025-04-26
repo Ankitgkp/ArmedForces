@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <nav className="mt-4 p-4 text-white">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
-        <button 
-          className="md:hidden text-xl" 
+        <button
+          className="md:hidden text-xl"
           onClick={() => setIsOpen(!isOpen)}
         >
           ☰
@@ -19,12 +19,12 @@ const Navbar = () => {
           <Link to="/army" className="font-normal">Army</Link>
           <Link to="/navy" className="font-normal">Navy</Link>
           <Link to="/airforce" className="font-normal">Airforce</Link>
-          <Link to="/shop" className="font-normal">Shop</Link>
+          {/* <Link to="/shop" className="font-normal">Shop</Link> */}
         </div>
 
-        <a 
-          href="https://joinindianarmy.nic.in/" 
-          target="_blank" 
+        <a
+          href="https://joinindianarmy.nic.in/"
+          target="_blank"
           rel="noopener noreferrer"
           className="border border-[#D7D2CB] px-4 py-2 text-sm font-bold text-center"
         >
