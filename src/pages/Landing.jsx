@@ -66,8 +66,8 @@ function HeroText() {
 
   return (
     <div className="font-univers text-center absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 w-full max-w-5xl">
-      <div className="absolute -top-30 left-1/2 transform -translate-x-1/2 w-32 sm:w-48 md:w-56 lg:w-64">
-        <img src="https://i.postimg.cc/vBVbrwTH/erasebg-transformed.png" alt="Logo" className="w-full object-contain" />
+      <div className="absolute -top-15 right-50 transform -translate-x-1/2 w-32 sm:w-48 md:w-45 lg:w-64">
+        <img src="https://i.postimg.cc/x8bdsbdH/erasebg-transformed-1.png" alt="Logo" className="w-30 object-contain" />
       </div>
 
       <p className="text-lg sm:text-xl md:text-3xl lg:text-6xl xl:text-8xl text-white font-semibold">
