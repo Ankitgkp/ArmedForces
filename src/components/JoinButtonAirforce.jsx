@@ -27,7 +27,7 @@ function JoinButtonAirforce() {
       <div className="relative -top-10 flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mt-6">
         {[
           {
-            title: "JOIN INDIAN NAVY",
+            title: "JOIN INDIAN AIRFORCE",
             hoverTitle: "Click to Join",
             autoTitle: "Be a Hero, Enlist Now!",
             fact: "Serve with honor, fight with courage, and protect with pride. Be a part of the legacy that shapes the nation's future.",
