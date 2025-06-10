@@ -7,36 +7,36 @@ gsap.registerPlugin(ScrollTrigger);
 const Achievements = () => {
   return (
     <div className="achievements-section bg-[#2B2E31] py-24">
-      <div className="container mx-auto px-6 max-w-5xl">
+      <div className="container mx-auto px-6 max-w-6xl">
         <h2 className="text-5xl font-semibold text-[#D7D2CB] text-center mb-20">
           <span className="text-[#9D2444]">Indian Army</span> Achievements
         </h2>
         <div className="timeline-container flex flex-col md:flex-row justify-between items-start gap-8 relative">
           <div className="timeline hidden md:block absolute top-1/2 left-0 w-full h-px bg-[#9D2444] transform -translate-y-1/2"></div>
           <Achievement
-            title="Independence and Partition"
-            date="1947"
-            description="The Indian Army maintained peace during India’s independence and partition, securing borders in turbulent times."
-          />
-          <Achievement
-            title="Siachen Glacier"
-            date="1984"
-            description="Operation Meghdoot in 1984 established India’s presence at Siachen Glacier, the highest battlefield on Earth."
-          />
-          <Achievement
             title="Kargil War"
             date="1999"
-            description="In 1999, the Indian Army recaptured all territory from Pakistani intruders in Kargil."
+            description="In 1999, the Indian Army recaptured all territory from intruders after the Kargil War, demonstrating exceptional valour at high altitudes."
           />
           <Achievement
-            title="Operation Vijay"
-            date="1999"
-            description="Operation Vijay reclaimed territory occupied by Pakistani forces in Kargil."
-          />
-          <Achievement
-            title="Counterinsurgency Operations"
+            title="Counter-Insurgency"
             date="Ongoing"
-            description="The Indian Army excels in counterinsurgency in Jammu and Kashmir, ensuring stability."
+            description="The Indian Army excels in complex counter-insurgency operations in Jammu and Kashmir, ensuring regional stability."
+          />
+          <Achievement
+            title="Operation Sarvashakti"
+            date="2024 / Ongoing"
+            description="A major joint operation in the Rajouri-Poonch sector to counter a new wave of terrorism, targeting threats in dense forest areas."
+          />
+          <Achievement
+            title="Pahalgam Attack Response"
+            date="April 2025 / Ongoing"
+            description="Following a heinous terror attack on tourists, the Army intensified security and launched widespread search operations to neutralize the perpetrators."
+          />
+          <Achievement
+            title="Operation Sindoor"
+            date="May 2025 / Ongoing"
+            description="A decisive, tri-service military response targeting terror infrastructure across the border after the Pahalgam attack, showcasing India's resolve."
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ const Achievement = ({ title, date, description }) => {
           start: 'top 90%',
           end: 'bottom 60%',
           toggleActions: 'play none none reverse',
-          once : true
+          once: true
         },
       }
     );

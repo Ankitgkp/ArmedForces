@@ -9,7 +9,7 @@ function JoinButton() {
   useEffect(() => {
     const interval = setInterval(() => {
       setAutoChange((prev) => !prev);
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -19,7 +19,7 @@ function JoinButton() {
       <div className="mt-5 sm:mt-10 h-auto w-full mx-auto">
         <img
           className="h-auto w-full max-h-[400px] object-cover"
-          src="https://media-hosting.imagekit.io/eef92ecd8f034248/Army_soldie_1.jpeg?Expires=1838304492&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=KC1Z0AXsF0bGM50Jk9M63-op3xfTBu85DPWsBo~RwQ6WKCUe249a4b0-9IyXrD8Le8qICBLdT52x~gCz8D0BB7KRm1JVqmm9cSyKw2hki-BDaRVyq7QJ13Ek~cO-RcFAPAPR0MYPAUFb0dnZlLZ6ERqRkPYxzpRW~4iOktCR5mCG9-VFExD3ceXzaq2jdH9nsWCOpRhZ5DXXDN~efhkyXw-lrT80fquIxBqmsBQ3HfvnB2y7XVm-Zk3RuT47LtLzgGUIvrHgKICgrJCrwqqnSUFXQiukrMVk3Y6i76sQSRfdp~KMohyIrzXAjTOyrjCBabMbqK1itNpVQLmuH6ISMQ__"
+          src="https://i.postimg.cc/MTpcW4r6/pexels-estudiodelarts-4130926-1.jpg"
           alt="Defense Image"
         />
       </div>

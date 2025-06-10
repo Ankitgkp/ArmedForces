@@ -29,44 +29,44 @@ const ArmyHome = () => {
 
   return (
     <div>
-    <div className="relative opacity-90">
-      <img
-        src={'https://media-hosting.imagekit.io/c845a7b438684e81/Pi7_pexels-chaikong2511-20258.jpg?Expires=1838469542&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=gnlSeUd5kbSqwKlXQjUnya3yDPvSJFNivZBjN~A~Z2AT5EbeGMyYb5ZoMHmAxUnTRasB7dA4wJOVBC2crCdK9O8zGXfCC87abpvUZIb7J2UuNsGFUOssMgrUu0~57yah8aI5Y6bKTPCLbroX-pTP7UpFd8agrWZmtSbNhCvimn2FhmBUII-yrrlQPwh30bXp4WyPF95mOdHVU-3gJoh01hTBhZQ1rXzHWBMgOhx00orp4R2JOcOxtbyzt75OxlvTAFkzN7ijUP7EyOL0JIL4SKl2dmtGqfYlXaqRe8mzdqpVO3PBXdYGrTMRZcMpzBzU40XiUCC4rspY8PKwSrPb1Q__'}
-        alt="Army Hero"
-        className="w-full h-[100vh] object-cover"
-      />
+      <div className="relative opacity-90">
+        <img
+          src={'https://i.postimg.cc/Qt41T5Br/Pi7-pexels-chaikong2511-20258.jpg'}
+          alt="Army Hero"
+          className="w-full h-[100vh] object-cover"
+        />
 
-      <div className="absolute top-0 left-0 w-full">
-        <Navbar />
+        <div className="absolute top-0 left-0 w-full">
+          <Navbar />
+        </div>
+
+        <motion.div
+          layout
+          className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 text-white px-4"
+        >
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={autoChange ? "hero1" : "hero2"}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide"
+            >
+              {autoChange ? "INDIAN ARMY" : "DEFENDERS OF THE NATION"}
+            </motion.h1>
+          </AnimatePresence>
+        </motion.div>
+
+
       </div>
-
-      <motion.div
-        layout
-        className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 text-white px-4"
-      >
-        <AnimatePresence mode="wait">
-          <motion.h1
-            key={autoChange ? "hero1" : "hero2"}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide"
-          >
-            {autoChange ? "INDIAN ARMY" : "DEFENDERS OF THE NATION"}
-          </motion.h1>
-        </AnimatePresence>
-      </motion.div>
-
-
-    </div>
-    <StatisticsSection />
-    <WhyJoinArmy />
-    <Gallery />
-    <JoinButton />
-    <ArmyFAQ />
-    <ArmyRegimentsMarquee />
-    <Footer />
+      <StatisticsSection />
+      <WhyJoinArmy />
+      <Gallery />
+      <JoinButton />
+      <ArmyFAQ />
+      <ArmyRegimentsMarquee />
+      <Footer />
     </div>
   );
 };

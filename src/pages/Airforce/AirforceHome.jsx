@@ -79,7 +79,7 @@ const NavyHome = () => {
     <div>
       <div className="relative opacity-90">
         <img
-          src="https://media-hosting.imagekit.io/d08ef888938d4cf4/vecteezy_ai-generated-jet-black-background_36229260.jpg?Expires=1838743606&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=K9Bg5kvTP5iTaUe4mJJKsKfumIxs3ejtPsE0Upwyt-hjxLSuDYFfPG3hwQYf61NzYgmHP8i61N66NV-jY-DKBjn4l65wKL7Jj3GSQwuy0WJkghTlaNCbq1Vqcs6CQUpie6brR0b8puDGOJBmRuPyn~HypxrFJ5b0tMu6S8PRaDI6-nMbwIb8szAP1l~BcIvCnRj4L44Yg9JfVRlJxIWscp9-lEWn3YWcL8lyadADZbEokuxxD-O8X~ozd60RDLpk81hqaX6sYp-AhTsjHroYp3xuRxTOgR1mFR3YIC28c1JNdMwYamlsXEC0b~ueez6s29~XZPOgi~qN7yJruKOv~A__"
+          src="https://scontent.fdel65-2.fna.fbcdn.net/v/t1.6435-9/116039382_10157563427191395_7198174292846656903_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=62EX1pkDCfgQ7kNvwHWxEQw&_nc_oc=Adn9OEGU33iCK6QghgcwLBZlY1otvowXBcHjxxlnJsB5N-VH0_vIAiWxCgh4DJaj0WYQX3XZwvt-gDxheRF4DH-I&_nc_zt=23&_nc_ht=scontent.fdel65-2.fna&_nc_gid=drNHMDDgSKepAfxVwAQ4PA&oh=00_AfNyLBQT2V_aECZYerHbgjlS6NkjgbqS0AXD6tz4Lqjw9Q&oe=686F96AF"
           alt="Navy Hero"
           className="w-full h-[100vh] object-cover"
         />
@@ -92,7 +92,7 @@ const NavyHome = () => {
 
         <motion.div
           layout
-          className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 text-white px-4 opacity-65"
+          className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 text-white px-4"
         >
           <AnimatePresence mode="wait">
             <motion.h1

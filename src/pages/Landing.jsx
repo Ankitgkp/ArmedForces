@@ -43,7 +43,7 @@ function BackgroundImage() {
     <div className="absolute inset-0 flex justify-center md:justify-end items-center">
       <img
         className="h-auto w-[95%] sm:w-[85%] md:w-[65%] lg:w-[50%] xl:w-[45%] max-w-none object-contain brightness-30"
-        src="https://media-hosting.imagekit.io/679b6e7679ac46f9/Map.png?Expires=1838304411&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UT6JmMpGfKKxxxR8SjFchuuV2aID9iLIpWoCttnl82ydTF~zBZqFsvFMz4NkkuVkwCAFfc7b0kniDiGyIuJGMOtEFHrzF2YElRSsE~d59xMPdx-ejwxr8SAjrqA6vsYl2BDfQm5Tfmy42jE8sMANYlql7snjts1e~xM3PuU1lJlyjfxbo67YZT-RxZdEUGKWyUQFEUowAVmlRgxv33dSpaGJLl0Uslc1LRBJhbmmt1xZ1~8PqYHO~MllW1WWI~lzUhH9a-Z7ClNBWUKapxy3Gx-LNWTBwtyHkOYXA8BVVw5kf3ez0tbeFRbJHna41dw7pu3vJx~C0PUSxd4coEJZ3g__"
+        src="https://cdn.pixabay.com/photo/2022/05/07/21/33/halftone-7181002_1280.png"
         alt="Map"
       />
     </div>
@@ -66,8 +66,8 @@ function HeroText() {
 
   return (
     <div className="font-univers text-center absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 w-full max-w-5xl">
-      <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-32 sm:w-48 md:w-56 lg:w-64">
-        <img src="https://media-hosting.imagekit.io/efbb2e8e1f194392/0849a60e-c149-41b5-8707-954a6e04c91c_removalai_preview.png?Expires=1838311828&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=o~s8FuBif-1X3oB4TxfRnQIV4aSwDEIq7Js~FVvk74qvVBKW8uivZJi~S1JAHmUnExPa0V85Cqw3iDhUHPt46nL5z9JWpmWvLzZbQBVzq8guHnXNX1RcLidRfdJ0yhfKPShNxBblMxLGlkP5Vzownv~vdgbpS5fbLPOTEGWx--6ZQgziAxcifqlRrQgvt5G3CmWP2~2sjxJyQM8l5TyooLNVZIPu0PCi54ynS1kQq1aohmOHHF1w3FljWg-A4TUSHGL2IJdl1vB7ZDqiebra7ad0rilq0nBu2HkwoeSvSEbhJvYwovGQFcHmRr91zSw7Tp2jFvqn6cTqnqPoKNEOSg__" alt="Logo" className="w-full object-contain" />
+      <div className="absolute -top-30 left-1/2 transform -translate-x-1/2 w-32 sm:w-48 md:w-56 lg:w-64">
+        <img src="https://i.postimg.cc/vBVbrwTH/erasebg-transformed.png" alt="Logo" className="w-full object-contain" />
       </div>
 
       <p className="text-lg sm:text-xl md:text-3xl lg:text-6xl xl:text-8xl text-white font-semibold">
@@ -94,7 +94,7 @@ function Section2() {
       <div className="mt-10 h-[400px] w-full mx-auto">
         <img
           className="h-full w-full object-cover"
-          src="https://media-hosting.imagekit.io/82c81d174b514c26/pexels-ashutosh-anand-2147962899-29850345.jpg?Expires=1838304326&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nnc0~W0c0t4oaTN0PRFRxMRLauUllIhG46UpBQqb7Xi9hf5IyKaVXj2GoP31DWLSZbexJz~Zm2w~CE2TIT~Fefik9X2DYwAuJoFtRj1fWNY9g5x~fdTmV4Xj3yAFjIX1IvxUsv3tCgPjpyazlIiyF2SDxwPjZnbDPSvPd9Mfek2g77Kbad36EZ6FQV5ZPg3cY1JOvkZmNpHXw6YsO8dbLwMSe-xK-GNDakOWCpoA3WamNM~UzlKJpUBbeerDQxeOzWDbgnD-ptu6PLCNOQ8y-Q6-9Fs-foZcREbAXjl-7u~jcwvZkeBaqysQqC1LRTiWZIO2RwK36GRDIme5ulE~XA__"
+          src="https://i.postimg.cc/tC5s89g1/india-gate-mornings.jpg"
           alt="Defense Image"
         />
       </div>
@@ -135,11 +135,18 @@ function VideoSection() {
       </h2>
 
       <div className="relative w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
-        <video autoPlay controls muted controlsList="nodownload" className="w-full h-auto rounded-lg">
-          <source src="https://media-hosting.imagekit.io/2e0cde2b09a9491d/Hero_Animation_With_Audio.mp4?Expires=1838305376&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=S8GTyoszJC66Za864fcSKJfkDuqRIYzim2YRUZOZ2WooriMzEboZKQyaQOrID0luMEM54WumHQ4zhqssDUXl5zStqaXLe~0VevL8MF47wzqHfsm1UoigUFyfXmqt6mOSoESTJ0svjkF8NIgB6q5dhsSsXMc6gtPFzwhiipyidoHFqlgSOUk6Uh8LV8CRsuj8cw-81FSXDfnx5GcTJa6bCyn3ocdBiUWTUWxJTQndB2Zk~BKcxDyi2vtjYWScGyIXAhRh~1QF5OZixERYfee6axRm5FMwxmJmKf0U6opU2eV2K7Qfg1f78xg2h7ef4HzcpLWQBfBrqTDRnetxVvwmLQ__" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="w-full aspect-video">
+          <iframe
+            src="https://imagekit.io/player/embed/c9dhdggke/Hero_Animation_With_Audio.mp4?updatedAt=1749556676341&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fc9dhdggke%2FHero_Animation_With_Audio.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1749556676341&updatedAt=1749556676341"
+            title="ImageKit video player"
+            frameBorder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+            allowFullScreen
+            className="w-full h-full rounded-lg"
+          ></iframe>
+        </div>
       </div>
+
     </div>
   );
 }

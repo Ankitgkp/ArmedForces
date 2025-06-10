@@ -80,7 +80,7 @@ const NavyHome = () => {
       {/* Background Image Section */}
       <div className="relative opacity-90">
         <img
-          src="https://media-hosting.imagekit.io/38966b0d8a6f4364/648378.jpg?Expires=1838477877&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mA~oxjPB28i7UZ3eg4wYTyp7VFnMMe9Q6qeuxRevJ6IF0aFLpCgd9pN1Fm44INo4CdFu-h4U8HobArpZySsMowmxgdBrnCHnNgkqzxcZwL9s8GySlJE2vb8x4EmJWlYMUcRsLzJj0MnqfoxdB2SUh4GnovJWcdsbygXrwIqDNBSOhM47~x4v4E3MLAqGyIqm2k1Z2B2tb0QvZbGDnSS6TR5n9-lN3Axixf8Ut-tyr0w7DfPSjB4J~VrOQ~xE0TbVoRHl~C4M~s8dsMR6usIfgDvkMU6l3EIrFBvV-9U-QN0EkOzhLcL6phfETNMwRKg1Tvin4~em76MvKfQvTY5~SA__"
+          src="https://i.postimg.cc/C17THMY0/648378-3.jpg"
           alt="Navy Hero"
           className="w-full h-[100vh] object-cover"
         />
